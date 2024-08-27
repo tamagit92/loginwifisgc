@@ -52,12 +52,11 @@ html, body {
 }
 
 .hero img{
-    width: 20em;
+    width: 25em;
 }
 
 .loginform{
     width: 50%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +71,19 @@ html, body {
 }
 
 .loginform form{
-    width: 50%
+    width: 50%;
+}
+
+.loginform form p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.loginform form p span{
+    background-color: #84cc16;
+    border-radius: 5px;
+    padding: 2px 10px;
+    font-size: 1em;
 }
 
 .input-group {
@@ -180,9 +191,13 @@ button:active{
         width: 100%;
     }
 
+    .hero img{
+        width: 20em;
+    }
+
     .hero .judul{
         font-size: 1.5em;
-    
+        
     }
 
     .loginform{
@@ -190,6 +205,6 @@ button:active{
     }
 
     .loginform form{
-        width: 100%
+        width: 100%;
     }
 }
