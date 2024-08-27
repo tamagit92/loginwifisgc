@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wifi Login SGC</title>
+</head>
+<body>
+    
+    <div class="konten">
+        <div class="hero">
+            <div class="logo">
+                <img src="img/logosgc.webp" alt="">
+            </div>
+            <div class="judul">Halaman Login Wifi<br><span>SMK</span> Global Cendekia</div>
+            <img src="img/hero.webp" alt="">
+        </div>
+
+        <div class="loginform">
+            <p>Masukkan Password untuk menggunakan Wifi</p>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="password">Password</label><br>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" name="password" required>
+                        <div class="hideunhide" id="togglePassword">
+                            <div class="hide">
+                                <img src="img/hide.png" alt="">
+                            </div>
+                            <div class="unhide">
+                            <img src="img/unhide.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const togglePassword = document.getElementById('togglePassword');
+            const passwordInput = document.getElementById('password');
+            const hideIcon = togglePassword.querySelector('.hide');
+            const unhideIcon = togglePassword.querySelector('.unhide');
+
+            togglePassword.addEventListener('click', function() {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+
+                // Toggle visibility of icons
+                hideIcon.style.display = type === 'password' ? 'none' : 'block';
+                unhideIcon.style.display = type === 'password' ? 'block' : 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>
