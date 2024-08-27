@@ -15,6 +15,7 @@ html, body {
     height: 100vh;
     display: flex;
     background-color: #0891b2;
+    position: relative;
 }
 
 .hero{
@@ -178,6 +179,9 @@ button:active{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 
