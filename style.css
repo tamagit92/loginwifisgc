@@ -7,7 +7,7 @@
 html, body {
     height: 100%;
     font-family: Arial, sans-serif;
-/*     overflow: hidden; */
+    /* overflow: hidden; */
 }
 
 .konten{
@@ -185,9 +185,6 @@ button:active{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
 }
 
 
@@ -203,11 +200,6 @@ button:active{
     }
 
     .hero .logo{
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        padding: 10px;
-        position: absolute;
         top: 5px;
         right: 5px;
     }
@@ -231,8 +223,6 @@ button:active{
     }
 
     .author{
-        padding-right: 0px;
-        bottom: 5px;
-        right: 5px;
+        padding-right: 10px;
     }
 }
