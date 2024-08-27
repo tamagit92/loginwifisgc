@@ -229,4 +229,9 @@ button:active{
     .loginform form{
         width: 100%;
     }
+
+    .author{
+        bottom: 5px;
+        right: 5px;
+    }
 }
