@@ -223,6 +223,7 @@ button:active{
 
     .loginform{
         width: 85%;
+        margin-top: 20px;
     }
 
     .loginform form{
